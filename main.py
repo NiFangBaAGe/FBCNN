@@ -23,7 +23,7 @@ if __name__ == '__main__':
     model = FBCNN(base_model=base_model, input_shape=input_shape,
                   num_classes=num_classes, bcnn_cfg=bcnn_cfg, attention_module=attention_module)
 
-    x_train, x_test, y_train, y_test = load_BreaKHis()
+    x_train, x_test, y_train, y_test = load_dataset()
 
     datagen = ImageDataGenerator(
         featurewise_center=False,
